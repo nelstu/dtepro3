@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>BodegaControl</servlet-name>
+        <servlet-class>controller.BodegaControl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InventarioControl</servlet-name>
+        <servlet-class>controller.InventarioControl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DetInventarioControl</servlet-name>
+        <servlet-class>controller.DetInventarioControl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProductoControl</servlet-name>
+        <servlet-class>controller.ProductoControl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BodegaControl</servlet-name>
+        <url-pattern>/BodegaControl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InventarioControl</servlet-name>
+        <url-pattern>/InventarioControl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetInventarioControl</servlet-name>
+        <url-pattern>/DetInventarioControl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductoControl</servlet-name>
+        <url-pattern>/ProductoControl</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
